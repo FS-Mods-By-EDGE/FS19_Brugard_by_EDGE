@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map width="2048" height="2048" imageFilename="maps/Brugard_pda_map.dds">
+    <filename>maps/Brugard.i3d</filename>
+    <shop filename="$data/store/ui/shop.xml" />
+    <colorGrading filename="$data/maps/mapDE_colorGrading.xml" />
+    <storeItems filename="$data/maps/mapDE_storeItems.xml" />
+    <sounds filename="$data/maps/mapDE_sound.xml" />
+    <environment filename="xmlFiles/Brugard_environment.xml" />
+    <wildlife filename="$dataS/character/wildlifeSpawner.xml" />
+    <helpline filename="$dataS/helpLine.xml" />
+    <gameplayHints filename="$dataS/gameplayHints.xml" />
+    <husbandryAnimals filename="$dataS/character/husbandryAnimals.xml" />
+    <animalNames filename="$dataS/character/animalNames.xml" />
+    <husbandryFood filename="$dataS/character/husbandryFoodDefinition.xml" />
+    <transportMissions filename="xmlFiles/Brugard_transportMissions.xml" />
+    <missionVehicles filename="$dataS/missionVehicles.xml" />
+    <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+    <textureMemoryUsage>0</textureMemoryUsage>
+    <culling xzOffset="100" />
+    <densityMap revision="1" />
+    <terrainLodTexture revision="1" />
+    <splitShapes revision="1" />
+    <tipCollision revision="1" />
+
+    <hotspots>
+        <hotspot name="Shop" fullName="$l10n_map_shop" imageUVs="264 8 240 240" xMapPos="277" zMapPos="459" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_TRIGGERS"/>
+    </hotspots>
+
+    <additionalFiles>
+        <additionalFile filename="$data/shared/materialHolders/tensionBeltMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/glowEffectMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/mapTargetMarker.i3d" />
+        <additionalFile filename="$data/particleSystems/particle_materialHolder.i3d" />
+        <additionalFile filename="$data/particleSystems/effect_materialHolder.i3d" />
+        <additionalFile filename="$data/particleSystems/cutterEffect_materialHolder.i3d" />
+        <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
+    </additionalFiles>
+    <mud>
+        <density filename="maps/BruGard_WeightMaps/mud_weight.grle"/>
+    </mud>
+    <seasons>
+        <mask filename="maps/BruGard_WeightMaps/seasonsMask.grle"/>
+        <missions>
+            <mission name="NPC01" type="snow" rewardScale="1" npcName="NPC_DE_01" location="$l10n_loc01" text="$l10n_snow01" farmlandId="46"/> <!--BGA-->
+            <mission name="NPC02" type="snow" rewardScale="1" npcName="NPC_DE_11" location="$l10n_loc02" text="$l10n_snow02"/>                 <!--Fire Station-->
+            <mission name="NPC03" type="snow" rewardScale="1" npcName="NPC_DE_03" location="$l10n_loc03" text="$l10n_snow03"/>                 <!--Gardencenter-->
+            <mission name="NPC04" type="snow" rewardScale="1" npcName="NPC_DE_14" location="$l10n_loc04" text="$l10n_snow04"/>                 <!--Lime Station-->
+            <mission name="NPC05" type="snow" rewardScale="1" npcName="NPC_DE_05" location="$l10n_loc05" text="$l10n_snow05" farmlandId="6"/>  <!--Sheep Farm-->
+            <mission name="NPC06" type="snow" rewardScale="1" npcName="NPC_DE_06" location="$l10n_loc06" text="$l10n_snow06" farmlandId="27"/> <!--Horse Farm-->
+            <mission name="NPC07" type="snow" rewardScale="1" npcName="NPC_DE_10" location="$l10n_loc07" text="$l10n_snow07"/>                 <!--Watermill-->
+            <mission name="NPC08" type="snow" rewardScale="1" npcName="NPC_DE_08" location="$l10n_loc08" text="$l10n_snow08" farmlandId="17"/> <!--camping site-->
+            <mission name="NPC09" type="snow" rewardScale="1" npcName="NPC_DE_09" location="$l10n_loc09" text="$l10n_snow09" farmlandId="20"/> <!--Cowzone-->
+            <mission name="NPC10" type="snow" rewardScale="1" npcName="NPC_DE_10" location="$l10n_loc10" text="$l10n_snow10" farmlandId="21"/> <!--Pigzone-->
+            <mission name="NPC11" type="snow" rewardScale="1" npcName="NPC_DE_11" location="$l10n_loc11" text="$l10n_snow11"/>                 <!--Compost Plant-->
+            <mission name="NPC12" type="snow" rewardScale="1" npcName="NPC_DE_13" location="$l10n_loc12" text="$l10n_snow12"/>                 <!--Supermarket-->
+            <mission name="NPC13" type="snow" rewardScale="1" npcName="NPC_DE_10" location="$l10n_loc13" text="$l10n_snow13"/>                 <!--Dairy-->
+            <mission name="NPC14" type="snow" rewardScale="1" npcName="NPC_DE_14" location="$l10n_loc14" text="$l10n_snow14"/>                 <!--Butcher-->
+            <mission name="NPC15" type="snow" rewardScale="1" npcName="NPC_DE_15" location="$l10n_loc15" text="$l10n_snow15"/>                 <!--Animal dealer-->
+            <mission name="NPC16" type="snow" rewardScale="1" npcName="NPC_DE_16" location="$l10n_loc16" text="$l10n_snow16"/>                 <!--Gas Station-->
+            <mission name="NPC17" type="snow" rewardScale="1" npcName="NPC_DE_15" location="$l10n_loc17" text="$l10n_snow17"/>                 <!--Vehicleshop-->
+            <mission name="NPC18" type="snow" rewardScale="1" npcName="NPC_DE_18" location="$l10n_loc18" text="$l10n_snow18" farmlandId="89"/> <!--Toom-->
+        </missions>
+    </seasons>
+
+    <groundTypeMappings>
+        <!-- Base -->
+        <groundTypeMapping type="dirt"         layer="ROUGHDIRT" />
+        <!-- Standard -->
+        <groundTypeMapping type="asphalt"      layer="ASPHALT" />
+        <groundTypeMapping type="gravel"       layer="GRAVEL" />
+        <groundTypeMapping type="grass"        layer="GRASS" />
+        <groundTypeMapping type="grassRough"   layer="GRASSROUGH" />
+        <groundTypeMapping type="sand"         layer="SANDWET" />
+        <groundTypeMapping type="animalMud"    layer="ANIMALMUD" />
+        <groundTypeMapping type="concrete"     layer="CONCRETE" />
+        <groundTypeMapping type="plates"       layer="PLATE" />
+        <groundTypeMapping type="cobblestones" layer="CONCRETE" />
+        <groundTypeMapping type="flagstones"   layer="CONCRETE" />
+        <!-- Special -->
+        <groundTypeMapping type="forestGround" layer="FORESTLEAVES" />
+        <groundTypeMapping type="rock"         layer="MOUNTAINROCK" />
+        <groundTypeMapping type="grass"         layer="GRASS"   paintableFoliageId="1"/>
+        <groundTypeMapping type="bush1"         layer="GRASS1"  paintableFoliageId="2"/>
+        <groundTypeMapping type="bush2"         layer="GRASS2"  paintableFoliageId="3"/>
+        <groundTypeMapping type="bush3"         layer="GRASS3"  paintableFoliageId="4"/>
+        <groundTypeMapping type="bush4"         layer="GRASS4"  paintableFoliageId="5"/>
+        <groundTypeMapping type="deco1"         layer="GRASS5"  paintableFoliageId="6"/>
+        <groundTypeMapping type="deco2"         layer="GRASS6"  paintableFoliageId="7"/>
+        <groundTypeMapping type="deco3"         layer="GRASS7"  paintableFoliageId="8"/>
+        <groundTypeMapping type="deco4"         layer="GRASS8"  paintableFoliageId="9"/>
+        <groundTypeMapping type="deco5"         layer="GRASS9"  paintableFoliageId="10"/>
+        <groundTypeMapping type="deco6"         layer="GRASS10" paintableFoliageId="11"/>
+        <groundTypeMapping type="deco7"         layer="GRASS11" paintableFoliageId="12"/>
+        <groundTypeMapping type="deco8"         layer="GRASS12" paintableFoliageId="13"/>
+        <groundTypeMapping type="deco9"         layer="GRASS13" paintableFoliageId="14"/>
+        <groundTypeMapping type="deco10"        layer="GRASS14" paintableFoliageId="15"/>
+        <groundTypeMapping type="deco11"        layer="GRASS15" paintableFoliageId="16"/>
+    </groundTypeMappings>
+    <paintableFoliages>
+        <paintableFoliage id="1"  layerName="grass"         firstDensityMapChannel="0" numDensityMapChannels="4" value="2"/>  <!--growing Grass-->
+        <paintableFoliage id="2"  layerName="bush01"        firstDensityMapChannel="0" numDensityMapChannels="4" value="1"/>  <!--bushes st. 1-->
+        <paintableFoliage id="3"  layerName="bush01"        firstDensityMapChannel="0" numDensityMapChannels="4" value="2"/>  <!--bushes st. 2-->
+        <paintableFoliage id="4"  layerName="bush01"        firstDensityMapChannel="0" numDensityMapChannels="4" value="3"/>  <!--bushes st. 3-->
+        <paintableFoliage id="5"  layerName="bush01"        firstDensityMapChannel="0" numDensityMapChannels="4" value="4"/>  <!--bushes st. 4-->
+        <paintableFoliage id="6"  layerName="decoFoliage"   firstDensityMapChannel="0" numDensityMapChannels="4" value="1"/>  <!--grassLong small-->
+        <paintableFoliage id="7"  layerName="decoFoliage"   firstDensityMapChannel="0" numDensityMapChannels="4" value="2"/>  <!--grassLong middle-->
+        <paintableFoliage id="8"  layerName="decoFoliage"   firstDensityMapChannel="0" numDensityMapChannels="4" value="3"/>  <!--small alive-->
+        <paintableFoliage id="9"  layerName="decoFoliage"   firstDensityMapChannel="0" numDensityMapChannels="4" value="4"/>  <!--smallAlive rumex-->
+        <paintableFoliage id="10" layerName="decoFoliage"   firstDensityMapChannel="0" numDensityMapChannels="4" value="5"/>  <!--bigAlive apera-->
+        <paintableFoliage id="11" layerName="decoFoliage"   firstDensityMapChannel="0" numDensityMapChannels="4" value="6"/>  <!--bigAlive chaerophyllum-->
+        <paintableFoliage id="12" layerName="decoFoliage"   firstDensityMapChannel="0" numDensityMapChannels="4" value="7"/>  <!--bigAlive chenopodium-->
+        <paintableFoliage id="13" layerName="decoFoliage"   firstDensityMapChannel="0" numDensityMapChannels="4" value="8"/>  <!--bigAlive cirsium-->
+        <paintableFoliage id="14" layerName="decoFoliage"   firstDensityMapChannel="0" numDensityMapChannels="4" value="9"/>  <!--bigAlive papaverRhoeas-->
+        <paintableFoliage id="15" layerName="decoFoliage"   firstDensityMapChannel="0" numDensityMapChannels="4" value="10"/> <!--bigAlive rumex-->
+        <paintableFoliage id="16" layerName="decoFoliage"   firstDensityMapChannel="0" numDensityMapChannels="4" value="11"/> <!--grassDense-->
+    </paintableFoliages>
+    <!-- <fillTypes filename="$data/maps/maps_fillTypes.xml" /> -->
+    <!-- <sprayTypes filename="$data/maps/maps_sprayTypes.xml" /> -->
+    <!-- <fruitTypes filename="$data/maps/maps_fruitTypes.xml" /> -->
+    <!-- <baleTypes filename="$data/maps/maps_baleTypes.xml" /> -->
+    <!-- <treeTypes filename="$data/maps/maps_treeTypes.xml" /> -->
+    <!-- <densityMapHeightTypes filename="$data/maps/maps_densityMapHeightTypes.xml" /> -->
+    <npcs filename="xmlFiles/Brugard_npcs.xml" />
+    <!-- <helpers filename="$data/maps/maps_helpers.xml" /> -->
+    <farmlands filename="xmlFiles/Brugard_farmlands.xml" />
+
+</map>
