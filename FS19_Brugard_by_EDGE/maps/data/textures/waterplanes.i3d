@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="Crater Bay" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.2.2"/>
+    </Asset>
+    <Files>
+        <File fileId="2" filename="$data/maps/textures/shared/water_normal.dds"/>
+        <File fileId="3" filename="$data/shaders/oceanShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="water_mat" materialId="447" diffuseColor="1 1 1 1" specularColor="1 1 1" customShaderId="3" customShaderVariation="simple">
+            <Normalmap fileId="2"/>
+            <CustomParameter name="bumpSpeedScale" value="-1 -2.75 0.02 1"/>
+            <CustomParameter name="underwaterFogColor" value="0.005 0.206 0.39 1"/>
+            <CustomParameter name="windScale" value="0.25 0 0 0"/>
+        </Material>
+        <Material name="water_mat" materialId="374" diffuseColor="1 1 1 1" specularColor="1 1 1" customShaderId="3" customShaderVariation="simple">
+            <Normalmap fileId="2"/>
+            <CustomParameter name="bumpSpeedScale" value="-1 -1.75 0.02 1"/>
+            <CustomParameter name="underwaterFogColor" value="0.05 0.203 0.23 1"/>
+            <CustomParameter name="windScale" value="0.25 0 0 0"/>
+        </Material>
+        <Material name="water_mat" materialId="35" diffuseColor="1 1 1 1" specularColor="1 1 1" customShaderId="3">
+            <Normalmap fileId="2"/>
+            <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="1.03" bumpScale="0.1" shapesObjectMask="256" lightsObjectMask="16777216"/>
+            <Refractionmap coeff="1" bumpScale="0.1"/>
+            <CustomParameter name="bumpSpeedScale" value="-1 -2.75 0.02 1"/>
+            <CustomParameter name="underwaterFogColor" value="0.005 0.25 0.3 1"/>
+            <CustomParameter name="windScale" value="0.25 0 0 0"/>
+        </Material>
+        <Material name="water_mat" materialId="355" diffuseColor="1 1 1 1" specularColor="1 1 1" customShaderId="3">
+            <Normalmap fileId="2"/>
+            <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="1.03" bumpScale="0.1" shapesObjectMask="256" lightsObjectMask="16777216"/>
+            <Refractionmap coeff="1" bumpScale="0.1"/>
+            <CustomParameter name="bumpSpeedScale" value="-1 -1.75 0.02 1"/>
+            <CustomParameter name="underwaterFogColor" value="0.005 0.203 0.23 1"/>
+            <CustomParameter name="windScale" value="0.25 0 0 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="waterplanes.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="waterPlanes" nodeId="6598">
+            <Shape shapeId="1" name="waterPlane" translation="0 12.15 0" clipDistance="1500" nodeId="6599" materialIds="35" receiveShadows="true"/>
+            <Shape shapeId="2" name="waterPlaneMirror" translation="0 12.15 0" clipDistance="1500" objectMask="32768" nodeId="6600" materialIds="447" receiveShadows="true"/>
+            <TransformGroup name="mountWater" nodeId="6601">
+                <Shape shapeId="3" name="waterPlane" translation="116.078 88.141 114.348" scale="0.03 1 0.03" clipDistance="1500" nodeId="6602" materialIds="355" castsShadows="true"/>
+                <Shape shapeId="3" name="waterPlaneMirror" translation="116.078 88.141 114.348" scale="0.03 1 0.03" clipDistance="1500" objectMask="32768" nodeId="6603" materialIds="374" castsShadows="true"/>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+    <UserAttributes>
+        <UserAttribute nodeId="6599">
+            <Attribute name="isMainWater" type="boolean" value="true"/>
+            <Attribute name="onCreate" type="scriptCallback" value="Environment.onCreateWater"/>
+        </UserAttribute>
+        <UserAttribute nodeId="6600">
+            <Attribute name="onCreate" type="scriptCallback" value="Environment.onCreateWater"/>
+        </UserAttribute>
+        <UserAttribute nodeId="6602">
+            <Attribute name="onCreate" type="scriptCallback" value="Environment.onCreateWater"/>
+        </UserAttribute>
+        <UserAttribute nodeId="6603">
+            <Attribute name="onCreate" type="scriptCallback" value="Environment.onCreateWater"/>
+        </UserAttribute>
+    </UserAttributes>
+</i3D>
